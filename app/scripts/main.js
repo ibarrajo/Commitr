@@ -11,18 +11,18 @@ angular.module('commitr', [
 
 
  .config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider
-    .when('/about', {
-        templateUrl: 'fragments/about.html',
-        controller: 'AboutCtrl'
-    })
-    .when('/contact', {
+  function($routeProvider) {
+    $routeProvider
+    .when('/about', {
+        templateUrl: 'fragments/about.html',
+        controller: 'AboutCtrl'
+    })
+    .when('/contact', {
 	    templateUrl: 'fragments/contact.html',
-        controller: 'ContactCtrl'
-    })
+        controller: 'ContactCtrl'
+    })
 	.otherwise({
-        templateUrl: 'fragments/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'fragments/main.html',
+        controller: 'MainCtrl'
     });
 }]);
